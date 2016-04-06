@@ -3,9 +3,7 @@ var app = express();
 
 var port = process.env.PORT || 3000;
 
-app.get('/', function (req, res) {
-    res.send('hi');
-})
+app.use(express.static('public'));
 
 app.listen(port, function(){
    console.log('Server is running on port: ' + port); 
