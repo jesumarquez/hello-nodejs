@@ -1,0 +1,21 @@
+{
+  "name": "hello-nodejs",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Jesu Marquez <jesumarquez@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jesumarquez/hello-nodejs",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3"
+  }
+}
