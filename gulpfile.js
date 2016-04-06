@@ -1,5 +1,8 @@
 var gulp = require('gulp');
 
-gulp.task('default', function () {
-    console.log('gulp default task!');
+gulp.task('copy-statics', function () {
+    gulp.src('src/client/index.html')
+        .pipe(gulp.dest('public'));
 })
+
+gulp.task('default',['copy-statics']);
