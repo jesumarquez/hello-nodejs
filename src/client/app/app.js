@@ -1,5 +1,5 @@
 (function () {
-    var person = require('./person/person');
+    var person = require('./person');
     
     angular.module('myapp',[person.name]);
 })();
