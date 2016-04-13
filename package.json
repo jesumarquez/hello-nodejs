@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:js": "browserify src/client/app/app.js -o public/app.js",
     "build:hint": "jshint src/client/app",
-    "start": "npm run build:js && node server.js",
+    "build": "npm run build:hint && npm run build:js",
+    "start": "npm run build && node server.js",
     "postinstall": "bower install"
   },
   "repository": {
