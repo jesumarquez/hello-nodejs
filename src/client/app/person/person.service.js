@@ -6,4 +6,4 @@ module.exports = function personService() {
         return 'Person Name';
     }
     return service;
-}
+};

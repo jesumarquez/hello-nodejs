@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:js": "browserify src/client/app/app.js -o public/app.js",
+    "build:hint": "jshint src/client/app",
     "start": "npm run build:js && node server.js",
     "postinstall": "bower install"
   },
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "browserify": "^13.0.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "jshint": "^2.9.1"
   }
 }
