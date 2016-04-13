@@ -12,7 +12,9 @@
     "build:js": "browserify src/client/app/app.js -o public/app.js",
     "build:hint": "jshint src/client/app",
     "build": "npm run build:hint && npm run build:js",
+    "watch": "watchify src/client/app/app.js -o public/app.js -v",
     "start": "npm run build && npm run copy && node server.js",
+    "start-dev": "npm run watch | npm start",
     "postinstall": "bower install"
   },
   "repository": {
@@ -32,6 +34,7 @@
   "devDependencies": {
     "browserify": "^13.0.0",
     "copyfiles": "^0.2.1",
-    "jshint": "^2.9.1"
+    "jshint": "^2.9.1",
+    "watchify": "^3.7.0"
   }
 }
