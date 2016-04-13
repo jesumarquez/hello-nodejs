@@ -5,10 +5,13 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "copy:img": "copyfiles -f src/client/images/*.* public/images",
+    "copy:html": "copyfiles -f src/client/index.html public && copyfiles -f src/client/partials/*.html public/partials",
+    "copy": "npm run copy:html && npm run copy:img",
     "build:js": "browserify src/client/app/app.js -o public/app.js",
     "build:hint": "jshint src/client/app",
     "build": "npm run build:hint && npm run build:js",
-    "start": "npm run build && node server.js",
+    "start": "npm run build && npm run copy && node server.js",
     "postinstall": "bower install"
   },
   "repository": {
@@ -27,6 +30,7 @@
   },
   "devDependencies": {
     "browserify": "^13.0.0",
+    "copyfiles": "^0.2.1",
     "gulp": "^3.9.1",
     "jshint": "^2.9.1"
   }

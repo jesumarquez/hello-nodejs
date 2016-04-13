@@ -5,10 +5,10 @@
     <title>Home</title>
 </head>
 <body>
+    <img src="images/icon_play.png"/>
     <h1>Home</h1>
-    <div ng-controller="PersonController as person">
-        <h3 ng-bind="person.name"></h3>
-    </div>
+    <div ng-include="'partials/person.html'"></div>
+
     <script src="lib/angular/angular.js"></script>
     <script src="app.js"></script>
 </body>
