@@ -5,7 +5,9 @@
     .config(['$routeProvider', function($routeProvider){
         $routeProvider
             .when('/', {
-               templateUrl: 'views/person.view.html'
+                templateUrl: 'views/person.view.html',
+                controller: 'PersonController',
+                controllerAs: 'person'
             })
             .otherwise({
                 redirectTo: '/'
