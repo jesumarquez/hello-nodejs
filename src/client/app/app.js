@@ -1,9 +1,5 @@
 (function () {
-    angular.module('myapp',[])
-    .controller('PersonController', PersonController);
+    var person = require('./person/person');
     
-    function PersonController(){
-        var vm = this;
-        vm.name = 'Pepe';
-    }
+    angular.module('myapp',[person.name]);
 })();

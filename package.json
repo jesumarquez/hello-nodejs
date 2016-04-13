@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp && node server.js",
+    "build:js": "browserify src/client/app/app.js -o public/app.js",
+    "start": "npm run build:js && node server.js",
     "postinstall": "bower install"
   },
   "repository": {
@@ -23,6 +24,7 @@
     "express": "^4.13.4"
   },
   "devDependencies": {
+    "browserify": "^13.0.0",
     "gulp": "^3.9.1"
   }
 }
