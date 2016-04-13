@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "copy:view": "copyfiles -f src/client/views/*.* public/views",
     "copy:img": "copyfiles -f src/client/images/*.* public/images",
     "copy:html": "copyfiles -f src/client/index.html public && copyfiles -f src/client/partials/*.html public/partials",
-    "copy": "npm run copy:html && npm run copy:img",
+    "copy": "npm run copy:html && npm run copy:img && npm run copy:view",
     "build:js": "browserify src/client/app/app.js -o public/app.js",
     "build:hint": "jshint src/client/app",
     "build": "npm run build:hint && npm run build:js",
