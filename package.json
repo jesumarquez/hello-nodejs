@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/jesumarquez/hello-nodejs#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "bower": "^1.7.9",
     "express": "^4.13.4"
   },
