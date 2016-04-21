@@ -28,9 +28,13 @@
   },
   "homepage": "https://github.com/jesumarquez/hello-nodejs#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.0",
     "bower": "^1.7.9",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongoose": "^4.4.12",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.0.0"
   },
   "devDependencies": {
     "browserify": "^13.0.0",
