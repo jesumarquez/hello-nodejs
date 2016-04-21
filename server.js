@@ -28,6 +28,7 @@ router.get('/products', function (req, res) {
 });
 
 router.post('/signup', userRoute.postUsers);
+router.post('/authenticate', userRoute.postAuthenticate);
 
 app.use('/api', router);
 
